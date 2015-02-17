@@ -11,6 +11,10 @@ of Rubyists. Their system used vCards for almost everything.  Dissatisfied with 
 
 It was decided to release this library as open source to give something back to the Ruby community.
 
+## Development
+
+[![Build Status](https://travis-ci.org/tijn/virginity.svg?branch=master)](https://travis-ci.org/tijn/virginity)
+
 ## FAQ
 
 * **Why this name?**
