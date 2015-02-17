@@ -9,6 +9,6 @@ Gem::Specification.new do |s|
   s.summary = %q{Virginity vCard writer/parser.}
   s.description = %q{Virginity reads and writes vcards and provides a nice api to modify them.}
   s.add_dependency('reactive_array', "~> 1.1")
-  s.add_dependency('fast_xs')
+  s.add_dependency('fast_xs', '~> 0.8')
   s.files = Dir['lib/**/*']
 end
