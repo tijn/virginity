@@ -1,5 +1,6 @@
 require 'virginity/encoding_decoding'
 require 'virginity/dir_info/param'
+require 'yaml' # only for #pretty_print(q)
 
 module Virginity
 
