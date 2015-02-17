@@ -2,7 +2,7 @@
 if defined? Encoding::UTF_8
   require "#{File.dirname(__FILE__)}/spec_helper"
   require 'rubygems'
-  require 'active_support/core_ext'
+  # require 'active_support/core_ext'
 
   describe "encodings" do
     specify 'round trips binary data' do
