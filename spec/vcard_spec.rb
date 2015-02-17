@@ -222,7 +222,7 @@ describe "breaking vCards" do
       #puts e
       nil
     end
-    lambda { Vcard.from_vcard(v.to_s) }.should_not raise_error StandardError
+    expect { Vcard.from_vcard(v.to_s) }.not_to raise_error
   end
 
   specify "adding a stupid field could break a vcard" do
@@ -235,7 +235,7 @@ describe "breaking vCards" do
       #puts e
       nil
     end
-    lambda { Vcard.from_vcard(v.to_s) }.should_not raise_error StandardError
+    expect { Vcard.from_vcard(v.to_s) }.not_to raise_error
   end
 end
 
@@ -255,7 +255,7 @@ end_vcard
       puts error.original.backtrace
     end
 
-    lambda { Vcard.from_vcard(@vcf) }.should_not raise_error
+    expect { Vcard.from_vcard(@vcf) }.not_to raise_error
     v = Vcard.from_vcard(@vcf)
     v.telephones.first.types.should include('WORK')
   end
